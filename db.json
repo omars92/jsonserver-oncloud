@@ -1,0 +1,55 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "companyId": "1",
+            "firstName": "Omar",
+            "lastName": "Salim",
+            "email": "omars@maxis.com.my",
+            "coco": []
+        },
+        {
+            "id": "2",
+            "companyId": "1",
+            "firstName": "Ann",
+            "lastName": "Lee",
+            "email": "annlee@maxis.com.my"
+        },
+        {
+            "id": "3",
+            "companyId": "2",
+            "firstName": "shivam",
+            "lastName": "Amdocs",
+            "email": "shivam@amdocs.com"
+        },
+        {
+            "id": "4",
+            "name": "hello test endpoint"
+        },
+        {
+            "firstName": "Omar1",
+            "lastName": "Salim1",
+            "email": "omars1@maxis.com.my",
+            "companyId": "1",
+            "id": "HXawkXV"
+        }
+    ],
+    "companies": [
+        {
+            "id": "1",
+            "name": "maxis",
+            "description": "telecommunication company"
+        },
+        {
+            "id": "2",
+            "name": "amdocs",
+            "description": "software development company"
+        }
+    ],
+    "Project": [
+        {
+            "Project1": "omar",
+            "Project2": "hello"
+        }
+    ]
+}
