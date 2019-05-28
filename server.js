@@ -5,6 +5,7 @@ const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults();
 const resourceRoutes = require("./api/routes/resource");
 const routes = require('./routes.json');
+const responseTemplateDto = require('./api/dto/responsetemplatedto');
 // const middleware = require('./middleware');
 
 server.use(middlewares)
@@ -15,7 +16,12 @@ server.use(jsonServer.bodyParser)
 // custom routes to add and delete resources
 server.use("/resource", resourceRoutes);
 
-server.use(jsonServer.rewriter(routes))
+server.use(jsonServer.rewriter(routes));
+
+// In this example, returned resources will be wrapped in a body property
+router.render = (req, res) => {
+    res.jsonp(responseTemplateDto(res.locals.data));
+};
 server.use(router);
 
 const port =  process.env.PORT || 3000;
